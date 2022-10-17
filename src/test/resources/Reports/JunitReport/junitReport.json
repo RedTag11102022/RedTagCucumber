@@ -1,0 +1,181 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Given The user should be in the HomePage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2022-10-16T13:15:33.356Z",
+        "before": [
+          {
+            "result": {
+              "duration": 47060733000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClassFlightHotel.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "To valid the login function with valid credentials",
+        "description": "",
+        "id": "to-validate-the-login-funcitonality-of-redtag.ca-application;to-valid-the-login-function-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 41600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClassFlightHotel.down()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2529160600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user has click the \"Sign In Home Page\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In Home Page\"",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginFlightHotel.the_user_has_click_the_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6909979100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "The user has to fill the \"suriyaprabhatest1989@gmail.com\" and \"Suriya@89\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"suriyaprabhatest1989@gmail.com\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"Suriya@89\"",
+                  "offset": 62
+                }
+              ],
+              "location": "LoginFlightHotel.the_user_has_to_fill_the_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1067768700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "The user has click the \"Sign In login Page\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In login Page\"",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginFlightHotel.the_user_has_click_the_button(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13608849500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "The user should be in \"valid login\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"valid login\"",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginFlightHotel.the_user_should_be_in_page(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@loginFlight+Hotel"
+          },
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@loginValidFHTC"
+          },
+          {
+            "name": "@tc2"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the login funcitonality of redtag.ca application",
+    "description": "",
+    "id": "to-validate-the-login-funcitonality-of-redtag.ca-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/loginFlightHotel.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@loginFlight+Hotel",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      },
+      {
+        "name": "@E2E",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 27
+        }
+      }
+    ]
+  }
+]

@@ -42,20 +42,24 @@ public class BaseClass {
 			op.addArguments("--incognito");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(op);
+			break;
 		case "firefox":
 			FirefoxOptions op1=new FirefoxOptions();
 			op1.addArguments("--diable-notifications");
 			op1.addArguments("--incognito");
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver(op1);
+			break;
 		case "edge":
 			EdgeOptions op2=new EdgeOptions();
 			op2.setCapability("--diable-notifications", true);
 			op2.setCapability("--incognito",true);
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver(op2);
+			break;
 		default:
 			System.err.println("Invalid Browser Name");
+			break;
 		}
 		return driver;
 	}

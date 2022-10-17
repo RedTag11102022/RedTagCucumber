@@ -1,0 +1,19 @@
+@login @loginFlight+Hotel @E2E
+Feature: To validate the login funcitonality of redtag.ca application
+
+  @smoke @regression @sanity @loginValidFHTC @tc2
+  Scenario Outline: To valid the login function with valid credentials [90m# src/test/resources/Features/loginFlightHotel.feature:21[0m
+    [36mWhen The user has click the "Sign In Home Page" button[0m
+    [36mAnd The user has to fill the "<Email Address>" and "<password>"[0m
+    [36mWhen The user has click the "Sign In login Page" button[0m
+    [36mThen The user should be in "valid login" page[0m
+
+    Examples: 
+
+  Background: Given The user should be in the HomePage [90m# src/test/resources/Features/loginFlightHotel.feature:4[0m
+
+  @login @loginFlight+Hotel @E2E @smoke @regression @sanity @loginValidFHTC @tc2
+  Scenario Outline: To valid the login function with valid credentials            [90m# src/test/resources/Features/loginFlightHotel.feature:29[0m
+    [32mWhen [0m[32mThe user has click the [0m[32m[1m"Sign In Home Page"[0m[32m button[0m                        [90m# LoginFlightHotel.the_user_has_click_the_button(String)[0m
+    [32mAnd [0m[32mThe user has to fill the [0m[32m[1m"suriyaprabhatest1989@gmail.com"[0m[32m and [0m[32m[1m"Suriya@89"[0m [90m# LoginFlightHotel.the_user_has_to_fill_the_and(String,String)[0m
+    [32mWhen [0m[32mThe user has click the [0m[32m[1m"Sign In login Page"[0m[32m button[0m                       [90m# LoginFlightHotel.the_user_has_click_the_button(String)[0m
